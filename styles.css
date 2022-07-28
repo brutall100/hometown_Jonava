@@ -1,0 +1,81 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+}
+
+#hero {
+    padding: 50px 150px;
+    background: url("images/jonava_main.jpg");
+    background-size: cover;
+}
+
+.visit {
+    margin: auto;
+    background: #1D3557;
+    border-radius: 5px;
+    width: 215px;
+    opacity: 0.7;
+    color: #F1FAEE;
+}   
+.hero-title {
+    color: #F1FAEE;
+    background: #457B9D;
+    border-radius: 7px;
+    margin: auto;
+    margin-top: 16px;
+    width: 350px;
+    font-size: 15px;
+    opacity: 0.8;
+    padding: 5px;
+}
+    
+#activities {
+    background-color: #F1FAEE;
+    padding: 1px;
+     
+}
+
+.activities-img, .activities-title {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px; 
+}
+
+.title {
+    width: 200px;
+}
+
+
+img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50px;
+}
+
+#footer {
+    width: 400px;
+    height: 220px;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 30px;
+    border-bottom: 10px solid #1D3557;
+    margin: auto;
+    background: #A8DADC;
+    border-radius: 13px;
+    margin-top: 20px;
+}
+
+.guide-img {
+    border-radius: 50%;
+}
