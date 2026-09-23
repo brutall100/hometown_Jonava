@@ -4,7 +4,7 @@ Vieno puslapio kelionių gidas po Jonavą. Tai Scrimba kurso projektas „Hometo
 
 **[Gyva demo versija](https://brutall100.github.io/scrimba-hometown-jonava/)** · **[Kodas](https://github.com/brutall100/scrimba-hometown-jonava)**
 
-![Visit Jonava pagrindinis puslapis tamsiu režimu](docs/screenshot.png)
+![Visit Jonava pagrindinis puslapis tamsiu režimu](docs/screenshot.webp)
 
 ## Apie projektą
 
@@ -64,7 +64,7 @@ Tada atsidaryk <http://localhost:8000>. Arba tiesiog atidaryk `index.html` narš
 │   ├── jonava-valley.webp
 │   └── bike-park.webp
 └── docs/
-    └── screenshot.png
+    └── screenshot.webp
 ```
 
 ## Padėkos
