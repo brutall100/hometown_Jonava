@@ -1,43 +1,148 @@
 <!DOCTYPE html>
-<html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Orbitron&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        
-        <!-- HERO SECTIO -->
-        <div id="hero">
-            <h1 class="visit">Visit Jonava</h1>
-            <h2 class="hero-title">Enjoy culture and sports in this vibrant district close to the center of KAUNAS.</h2>
-        </div>
-        
-        <!-- ACTIVITIES SECTION -->
-        <div id="activities">
-            <h3>Top three activities to do at Jonava</h3>
-            <div class="activities-img">
-                <img src="images/jkc_foto.jpg" >
-                <img src="images/Jonavos_slenis.jpg" >
-                <img src="images/Jonava_sport.jpg" >
-            </div>
-            <div class="activities-title">
-                <h2 class="title">The Jonava JKC Center is a great place to spend your night out.Yuo can watch new film.Spend time on galery or exhibition.</h2>
-                <h2 class="title">The Jonava Park is perfect for piknic, getting some tan, or just chilling out.Jonava have two huge parks.</h2>
-                <h2 class="title">The Jonava has sport stadium.Near stadium new pool.Sport competitions are held here all the time.</h2>
-            </div>
-        </div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Visit Jonava</title>
+  <meta name="description" content="A one-page travel guide to Jonava, Lithuania: culture, parks and sport 30 km from Kaunas.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23f2b705'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='16' text-anchor='middle' fill='%2314181b'%3EJ%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg" aria-hidden="true">
+    <div class="bg__grid"></div>
+    <div class="bg__glow"></div>
+  </div>
 
-        <!-- GUIDE SECTION -->
-        <div id="footer">
-            <div class="footer-titlte">
-                <h3>Your guide</h3>
-                <p>"I have lived at Jonava for over 15 years, so I can show you all of its best parts and hidden secrets."</p>
-                <h4>Aldas Jonis</h4>
-            </div>
-            <img src="images/Aldas_NEW.jpg"
-                 class="guide-img">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <a class="nav__logo" href="#top" aria-label="Visit Jonava, back to top">
+      <span class="nav__mark">J</span>
+      <span class="nav__word">Visit Jonava</span>
+    </a>
+    <nav aria-label="Main">
+      <ul class="nav__links">
+        <li><a href="#activities">Activities</a></li>
+        <li><a href="#guide">Guide</a></li>
+      </ul>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch colour theme">
+      <span class="theme-toggle__icon" aria-hidden="true"></span>
+    </button>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero__media">
+        <img src="images/jonava-hero.jpg" alt="Aerial view of Jonava with the railway bridge over the Neris river" width="950" height="626">
+      </div>
+      <div class="hero__content">
+        <p class="tag"><span class="tag__dot"></span>54.9°N · 24.3°E · Lithuania</p>
+        <h1 class="hero__title">
+          <span class="hero__line">Visit</span>
+          <span class="hero__line hero__line--accent">Jonava</span>
+        </h1>
+        <p class="hero__lead">Culture, green parks and sport on the banks of the Neris, just 30&nbsp;km from Kaunas.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#activities">Explore activities <span class="btn__icon" aria-hidden="true">↗</span></a>
+          <a class="btn btn--ghost" href="#guide">Meet your guide <span class="btn__icon" aria-hidden="true">↗</span></a>
         </div>
-    </body>
+      </div>
+      <ul class="stats" aria-label="Jonava in numbers">
+        <li class="stat"><span class="stat__num" data-count="30">30</span><span class="stat__unit">km</span><span class="stat__label">to Kaunas</span></li>
+        <li class="stat"><span class="stat__num" data-count="2">2</span><span class="stat__label">big parks</span></li>
+        <li class="stat"><span class="stat__num" data-count="1">1</span><span class="stat__label">river, the Neris</span></li>
+        <li class="stat"><span class="stat__num" data-count="3">3</span><span class="stat__label">things to do first</span></li>
+      </ul>
+    </section>
+
+    <!-- ACTIVITIES -->
+    <section class="section" id="activities" aria-labelledby="activities-title">
+      <header class="section__head reveal">
+        <p class="eyebrow">// 01 — Things to do</p>
+        <h2 class="section__title" id="activities-title">Top three activities in Jonava</h2>
+      </header>
+
+      <div class="cards">
+        <article class="card reveal">
+          <div class="card__media">
+            <img src="images/culture-center.jpg" alt="The modern Jonava Culture Centre building on a sunny day" width="1400" height="1049" loading="lazy">
+            <span class="card__num">01</span>
+          </div>
+          <div class="card__body">
+            <p class="card__kicker">Culture · Evenings</p>
+            <h3 class="card__title">Jonava Culture Centre</h3>
+            <p class="card__text">A great place for a night out. Catch a new film, wander through a gallery or visit the latest exhibition.</p>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__media">
+            <img src="images/jonava-valley.jpg" alt="Aerial view of a green park with an amphitheatre next to a lake" width="1000" height="710" loading="lazy">
+            <span class="card__num">02</span>
+          </div>
+          <div class="card__body">
+            <p class="card__kicker">Nature · Weekends</p>
+            <h3 class="card__title">The parks</h3>
+            <p class="card__text">Jonava has two huge parks. They are perfect for a picnic, some sunshine or simply chilling by the water.</p>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__media">
+            <img src="images/bike-park.jpg" alt="A mountain biker in a red jacket jumping on a dirt track" width="800" height="600" loading="lazy">
+            <span class="card__num">03</span>
+          </div>
+          <div class="card__body">
+            <p class="card__kicker">Sport · All year</p>
+            <h3 class="card__title">Stadium &amp; sports</h3>
+            <p class="card__text">A stadium with a new swimming pool next to it, bike trails nearby and sports competitions all year round.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- GUIDE -->
+    <section class="section" id="guide" aria-labelledby="guide-title">
+      <header class="section__head reveal">
+        <p class="eyebrow">// 02 — Your guide</p>
+        <h2 class="section__title" id="guide-title">Explore with a local</h2>
+      </header>
+
+      <div class="guide reveal">
+        <div class="guide__avatar" aria-hidden="true">
+          <svg viewBox="0 0 120 120">
+            <circle cx="60" cy="60" r="58" class="guide__ring"/>
+            <text x="60" y="74" text-anchor="middle">AD</text>
+          </svg>
+        </div>
+        <blockquote class="guide__quote">
+          <p>“I have lived in Jonava for over 15 years, so I can show you all of its best places and hidden secrets.”</p>
+          <footer>
+            <strong class="guide__name">Alex Doe</strong>
+            <span class="guide__role">Local guide · demo profile</span>
+          </footer>
+        </blockquote>
+        <div class="guide__actions">
+          <button class="btn btn--primary" type="button" data-toast="Thanks! This is a demo, so no tour was booked.">Book a walk <span class="btn__icon" aria-hidden="true">↗</span></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Built as a <a href="https://scrimba.com/" target="_blank" rel="noopener">Scrimba</a> practice project.</p>
+    <p class="mono">Photos of Jonava used for learning purposes only.</p>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
 </html>
